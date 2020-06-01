@@ -1,0 +1,10 @@
+- Bộ lọc
+
+- Thay đổi số lượng phần tử mảng dựa theo điều kiện trong function
+
+- Syntax: 
+        +  arr.filter(function(item) {
+            //transform
+          });
+        +  var newArray = arr.filter(callback(element[, index[, array]])[, thisArg]);
+

@@ -1,0 +1,14 @@
+Variables - Biến
+
+  - RAM Keeper
+  - CPU (good at Math)
+  - Screen
+  - Program
+
+Khi chạy ứng dụng, dữ liệu chương trình sẽ lưu vào RAM, khi chương trình kết thúc nó sẽ mất đi
+
+  - Khai báo: từ khóa var
+  - Tên biến
+  - Giá trị
+  - Phép gán: =
+  

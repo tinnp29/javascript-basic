@@ -1,0 +1,10 @@
+Sync & Async
+
+  - Synchronous(Đồng bộ): chương trình sẽ chạy theo từng bước và chỉ khi nào thực hiện xong
+                          bước 1 thì mới chuyển sang bước 2, chương trình này chạy xong
+                          rồi mới đến chương trình khác, top -> bottom, left -> right :v
+
+  - Asynchronous(Bất đồng bộ): chương trình có thể bỏ qua một bước nào đó, tiết kiệm thời gian
+    + Read/Write file to FS
+    + Network
+

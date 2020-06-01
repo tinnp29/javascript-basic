@@ -1,0 +1,25 @@
+
+- Phương thức reduce() thực thi một function reducer mà bạn cung cấp trên mỗi phần tử của mảng,
+kết quả trả về là giá trị đơn.
+
+- reduce() dùng một callback function và nhận vào các tham số trong callback function này rồi trả về một giá trị
+  + Giống kiểu chế đồ trong LOL (Bộ chứa + Kiếm BF -> ra kiếm BF, 
+                                          rồi BF + với gì đó nữa để -> đồ mới,
+                                          đồ mới + gì đó -> đồ hoàn chỉnh).
+
+- syntax: arr.reduce(callback( accumulator, currentValue[, index[, array]] )[, initialValue]);
+  + name method: reduce
+  + callback: function callback
+  + accumulator: bộ chứa - lúc đầu là 0
+  + currentValue: giá trị hiện tại - giá trị đầu tiên của mảng, rồi đến các giá trị tiếp theo
+  + initialValue: giá trị khởi tạo
+  + tham số đầu tiên của reduce là callback, tham số thứ 2 là initialValue,
+    nếu không có tham số thứ 2 thì
+      -> tham số thứ nhất của callback function là giá trị đầu tiên của mảng, tham số thứ 2 là giá trị thứ 2 của mảng
+    còn nếu có tham số thứ 2 thì
+      -> tham số thứ nhất của callback function là initialValue, tham số thứ 2 là giá trị đầu tiên của mảng
+
+Nếu initialValue không được cung cấp, 
+  -> reduce() sẽ thực thi callback bắt đầu từ index 1, bỏ qua index đầu tiên. 
+Nếu initialValue được cung cấp, 
+  -> index sẽ bắt đầu từ 0

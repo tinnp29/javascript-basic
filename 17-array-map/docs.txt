@@ -1,0 +1,10 @@
+- array.map(): Tập hợp các phần tử cũ thành các phần tử mới theo một quy tắc được định nghĩa bởi một function
+- số lượng không thay đổi
+
+- Syntax: 
+  arr.map(function(item) {
+    // transform
+    return newItem;
+  });
+
+  

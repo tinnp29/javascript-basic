@@ -1,0 +1,208 @@
+// var arr = [1, 2, 3, 4, 5];
+
+// function removeEnd(arr, n) {
+//   console.log(n + 1);
+//   return arr.splice(0, n);
+// }
+
+// console.log(removeEnd(arr, 3));
+
+// function transform(numbers, callback) {
+// // Viết nội dung hàm ở đây 
+//     var result = [];
+//     for(var i = 0; i < numbers.length; i++) {
+//         callback(result.push(numbers[i]));
+//     }
+//     return callback(result);
+// }
+  
+// function double(num) {
+// // viết code ở đây
+//   for(var i = 0; i < num.length; i++) {
+//     num[i] *= 2;
+//   }
+//   return num;
+// }
+
+// console.log(transform([21, 11, 5], double));
+
+// function findDivisibleNum(array, x) {
+//   // viết code ở đây.
+//   var newNumber = array.find(function(number) {
+//       return number % x === 0;
+//   });
+//   return newNumber;
+// }
+// console.log(findDivisibleNum([1, 3, 4], 2));
+
+console.log(0 + true + true);
+
+// var voters = [
+//   {name:'Bob' , age: 30, voted: true},
+//   {name:'Jake' , age: 32, voted: true},
+//   {name:'Kate' , age: 25, voted: false},
+//   {name:'Sam' , age: 20, voted: false},
+//   {name:'Phil' , age: 21, voted: true},
+//   {name:'Ed' , age:55, voted:true},
+//   {name:'Tami' , age: 54, voted:true},
+//   {name: 'Mary', age: 31, voted: false},
+//   {name: 'Becky', age: 43, voted: false},
+//   {name: 'Joey', age: 41, voted: true},
+//   {name: 'Jeff', age: 30, voted: true},
+//   {name: 'Zack', age: 19, voted: false}
+// ];
+
+// function totalVotes(arr) {
+//   // write code here...
+//   var total = arr.reduce(function(accumulator, currentValue) {
+//       return accumulator + (currentValue.voted === true);
+//   }, 0);
+  
+//   return total;
+// }
+
+// totalVotes(voters);
+
+
+------------------------------------
+
+var wishlist = [
+  { title: "Tesla Model S", price: 90000 },
+  { title: "4 carat diamond ring", price: 45000 },
+  { title: "Fancy hacky Sack", price: 5 },
+  { title: "Gold fidgit spinner", price: 2000 },
+  { title: "A second Tesla Model S", price: 90000 }
+];
+
+
+function arrayTitle(wishlist) {
+  // Write code here...
+  var titles = wishlist.reduce(function(accumulator, currentValue) {
+
+    return accumulator.concat(currentValue.title);
+  }, []);
+  return titles;
+}
+
+console.log(arrayTitle(wishlist));
+
+--------------------------------------
+// var listProducts = [
+//   {id: 1, categoryId: 1, name: 'Tivi'},
+//   {id: 2, categoryId: 1, name: 'Tủ lạnh'},
+//   {id: 3, categoryId: 3, name: 'Ghế sofa'},
+//   {id: 4, categoryId: 1, name: 'Máy giặt'},
+//   {id: 5, categoryId: 2, name: 'Chén bát'},
+//   {id: 6, categoryId: 2, name: 'Nồi cơm điện'},
+//   {id: 7, categoryId: 3, name: 'Cửa kính'},
+//   {id: 8, categoryId: 1, name: 'Điều hoà'},
+//   {id: 9, categoryId: 3, name: 'Bàn tròn'},
+//   {id: 10, categoryId: 2, name: 'Lò vi sóng'},
+// ];
+
+// function filterProductsByCategoryId(products, categoryId) {
+//   // your code here! 
+//   var filteredProducts = products.filter(function(product){
+//       return product.categoryId === categoryId;
+//   });
+  
+//   return filteredProducts;
+// }
+
+// console.log(filterProductsByCategoryId(listProducts, 2));
+
+---------------------------------------------------
+function removeDuplicate(array) {
+  // write code here...
+  var newArr = array.filter(function(item, index) {
+    // return  array.indexOf(item) === index;
+     console.log(array.indexOf(item), index);
+  });
+  
+  return newArr;
+}
+
+console.log(removeDuplicate([1, 1, 2, 3, 3]));
+
+-----------------------------------hay
+var arrays = [
+  ["1", "2", "3"],
+  [true],
+  [4, 5, 6]
+];
+
+function flatten(arr) {
+  // viết code ở đây.
+  var newArr = arr.reduce(function(accumulator, currentValue){
+      
+      return accumulator.concat(currentValue.map(function(item) {
+        return item;
+      }));
+
+  }, []);
+  
+  return newArr;
+}
+
+console.log(flatten(arrays)); // ["1", "2", "3", true, 4, 5, 6];
+--------------------------------
+function countOccurrences(arr) {
+  // viết code ở đây.
+
+  var newArr = arr.reduce(function(accumulator, currentValue) {
+
+    if(currentValue in accumulator) {
+      accumulator[currentValue]++;
+    } else {
+      accumulator[currentValue] = 1;
+    }
+    return accumulator;
+
+  }, {});
+
+  return newArr;
+}
+
+console.log(countOccurrences(['a', 'b', 'c', 'b', 'a']));
+
+-----------------------------vcc
+var students = [
+  { name: 'A', score: 100 },
+  { name: 'B', score: 10 },
+  { name: 'C', score: 101 },
+  { name: 'D', score: 50 },
+  { name: 'E', score: 75 }
+];
+
+function getTopStudents(students) {
+  // Write code here...
+  var newStudents = students.sort(function(studentOne, studentTwo) {
+      return studentTwo.score - studentOne.score;
+  });
+
+  return newStudents.slice(0, 3).map(function(student) {
+    return student.name;
+  });
+
+}
+
+console.log(getTopStudents(students));
+
+-----------------------------------
+function powerup(arr) {
+  // your code here!
+  var newArr = arr.map(function(number) {
+    var a = [];
+    if(number % 2 == 0) {
+      a.push(Math.pow(number, 2));
+    } else {
+      a.push(number);
+    }
+    return a;
+  });
+
+  return newArr.reduce(function(accumulator, currentValue) {
+    return accumulator.concat(currentValue);
+  }, []);
+}
+console.log(powerup([0, 3, 6, 7, 4]));

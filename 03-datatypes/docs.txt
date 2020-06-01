@@ -1,0 +1,5 @@
+Data Types:
+
+  - Primitives: Number, String, Boolean
+  - Specials: undefined, null
+  - References: Array, Object

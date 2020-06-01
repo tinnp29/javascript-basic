@@ -1,0 +1,10 @@
+Trong lập trình, biến và function và 2 khái niệm rất quan trọng
+  - Function: Giải quyết một vấn đề nào đó, 
+    + ex: Máy pha cafe: Đầu vào: hạt cafe, nước,.. Đầu ra: cafe
+
+  - Key words: function, return
+  - Function name: doSomething
+  - Params: input1, input2
+
+  - Khi khai báo một function, nó sẽ lưu function vào bộ nhớ giống variables nhưng khác là nó được thực thi.
+  - Execute/Call function: doSomething(input1, input2);

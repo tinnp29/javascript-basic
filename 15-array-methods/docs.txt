@@ -1,0 +1,95 @@
+* Các method hay dùng cho Array
+
+  - a.concat(b): 
+      elementN - Các phần tử sẽ thêm vào cuối mả-
+    + Nối 2 hay nhiều mảng với nhau, hoặc nối các giá trị vào 1 mảng. Phương thức này không làm thay đổi 
+      các mảng mà thay vào đó sẽ trả về 1 mảng mới.
+    + Syntax: var newArray = oldArray.concat(value1[, value2[, ...[, valueN]]]);
+      valueN - các giá trị hoặc mảng dùng để nối lại với nhau trong mảng mới.
+
+  - a.push(b):
+    + Giúp thêm một hay nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng
+    + Syntax: arr.push(element1[, ...[, elementN]]);
+      elementN - Các phần tử sẽ thêm vào cuối mảng.
+
+  - a.pop(b):
+    + Xóa phần tử cuối cùng của một mảng và trả về phần tử đó. Phương thức này làm thay đổi
+      độ dài của mảng.
+    + Syntax: arr.pop();
+      Giá trị trả về - Phần tử bị xoá từ mảng, undefined nếu mảng rỗng.
+
+  - a.shift():
+    + Xóa phần tử đầu tiên của một mảng và trả về phần tử đó. Phương thức này làm thay đỏi 
+      độ dài của mảng.
+    + Syntax: arr.shift();
+      Giá trị trả về - Phần tử bị xóa từ mảng.
+
+  - a.unshift():
+    + Phương thức unshift() thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài của mảng mới.
+    + Syntax: arr.unshift(element1[, ...[, elementN]]);
+      elementN - Các phần tử được thêm vào đầu mảng
+
+  - a.slice():
+    + Phương thức slice(from, util) cắt bỏ một phần của array và tạo ra một array mới, 
+    từ index from -> index until(Không bao gồm util), mảng ban đầu không bị thay đổi.
+    + Syntax:  
+      .- arr.slice(); - Cắt toàn bộ array và tạo ra một array mới (like copy)
+      .- arr.slice(from); Cắt các phần tử từ vị trí thứ from.
+      .- arr.slice(from, util); - Cắt các phần tử từ vị trí thứ from -> trước vị trí thứ util
+      .- from - chỉ số bắt đầu chọn phần tử. Nếu chỉ số này là âm, được xem như tính ngược từ cuối mảng.
+      slice(-2) - lấy 2 giá trị cuối cùng của mảng. Nếu begin là 0, lấy từ vị trí 0.
+      .- util - chỉ số ngừng chọn phần tử. ex: slice(1, 4) - Lấy về 3 phần tử từ vị trí thứ 1 trong mảng.
+      Chỉ số âm tính ngược từ cuối mảng về, ex: slice(2, -2) - Lấy về phần tử từ vị trí 2 -> trước 
+      2 phần tử cuối cùng của mảng.
+      Nếu util không được truyền vào, slice sẽ chọn đến cuối mảng.
+      Nếu util lớn hơn độ dài mảng, slice chỉ chọn đến cuối mảng.
+    + Có thể dùng cho mảng và chuỗi
+
+  - a.splice():
+    + Phương thức splice() thay đổi phần tử của mảng bằng cách xóa các phần tử đang tồn tại
+      và thêm các phần tử mới. Mảng ban đầu bị thay đổi
+    + Syntax: 
+      .- array.splice(start[, deleteCount[, item1[, item2[, ...]]]]);
+      Các tham số:
+        -> start: Vị trí bắt đầu thay đổi mảng(mặc định là 0), 
+                  nếu lớn hơn độ dài của mảng, chỉ số start sẽ được thiết lập bằng độ dài của mảng,
+                  nếu giá trị là âm, thì bắt đầu từ các phần tử cuối mảng, -n ứng với vị trí thứ n cuối cùng của mảng.
+      .- arr.splice(): Xóa hết phần tử mảng
+      .- arr.splice(n): Lấy các phần tử từ vị trí n của mảng
+      .- arr.splice(i, n): Lấy n phẩn tử từ vị trí thứ i của mảng
+      .- arr.splice(i, deleteCount, item1, item2, itemn,..);
+          * i: từ chỉ số i
+          * deleteCount: số phần tử bị xóa
+          * item1, item2, itemn: thêm phần tử vào
+    + Chỉ được dùng cho mảng
+
+  - string.split():
+    + Phương thức split() chia một string thành các substring và trả về nó dưới dạng một mảng
+    + Syntax: string.split(separator, limit);
+      .- separator: Định nghĩa ra kí tự để chia string
+      .- limit: Giới hạn số lượng được tách trả về trong mảng
+    + Chỉ dùng cho string
+
+  - arr.indexOf():
+    + Phương thức indexOf sẽ trả về giá trị index đầu tiên trong mảng, nơi mà nó được tìm thấy trong mảng,
+    hoặc trả về -1 nếu không tồn tại trong mảng.
+    + Syntax: arr.indexOf(searchElement[, fromIndex]);
+      .- searchElement: phần tử cần tìm trong mảng
+      .- fromIndex|option: vị trí index nơi bắt đầu tìm kiếm
+        -> nếu fromIndex >= số phần tử trong mảng, -1 sẽ được trả về, việc tìm kiếm sẽ không xảy ra
+        -> nếu fromIndex là một số âm, vị trí index được tính từ cuối mảng
+        -> ...
+
+* Các array method khác: 
+  -> Array.from(): Tạo ra một mảng mới tử một đối tượng giống mảng hoặc interable
+  -> Array.isArray(): Trả về tru nếu biến là một mảng, ngược lại false
+  -> push(): Thêm phần tử vào cuối mảng
+  -> pop(): Xóa phần tử từ cuối mảng
+  -> shift(): Xóa phần tử từ đầu mảng
+  -> unshift(): Thêm phần tử vào đầu mảng
+  -> indexOf(): Tìm chỉ mục của phần tử
+  -> slice(): Sao chép mảng
+  -> ...
+  
+
+

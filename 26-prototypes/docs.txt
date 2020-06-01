@@ -1,0 +1,28 @@
+* Prototypes - Nguyên Mẫu, Khuôn Mẫu:
+  
+  -> function là object, có properties
+  -> prototypes là khuôn bánh, obj là cái bánh :))
+  -> Tất cả các function trong JS khi được define đều có thuộc tính là prototype(là obj),
+      trong prototype này có một thuộc tính là constructor và constructor này lại
+      trỏ ngược lại đến constructor function ban đầu, --> constructor là constructor function. 
+  -> Các object khi được khởi tạo bằng từ khóa new thì sẽ dùng chung prototype, chia sẻ
+      giữa các object
+  -> Sử dụng prototypes sẽ tiết kiệm bộ nhớ hơn bởi vì khi tạo prototype
+      cho một object, các object khi được tạo bằng từ khóa new sẽ cùng trỏ đến prototypes
+      của object đó.
+  -> Trong prototype có thể truy cập đến this 
+  -> jerry.sleep() === mickey.sleep(); // false
+  -> Tạo một lần nó lưu trữ 1 lần, tạo cách thủ công thì mỗi một lần tạo obj nó sẽ
+      chiếm một phần bộ nhớ 
+  -> Thực tế người ta hay làm thế này.
+
+  -> Là khái niệm cốt lõi cơ bản trong JS khá quan trọng để thực thi OOP trong JS
+  -> Vì JS là một prototype-based language, không có khái niệm class như các ngôn ngữ khác
+  -> Nôm na kiểu là inheritance
+  -> Là cơ chế mà các obj trong JS kế thừa các tính năng từ một obj khác. Tất cả các obj trong
+      JS đều có một prototype, và các obj này kế thừ
+      
+  -> Khi function được khai báo(function là object), nó sẽ có một property. Tất cả các function
+      đều có property là prototype(prototype này là object, trong prototype này có một property
+      là constructor, constructor này lại trỏ đến constructor function ban đầu).
+     

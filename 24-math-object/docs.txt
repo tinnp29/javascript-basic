@@ -1,0 +1,9 @@
+Math object in JS
+
+  -> Math.PI: số PI
+  -> Math.ceil(number): // ceiling - trần nhà, làm tròn số thập phân lên, ex: 9.2 -> 10
+  -> Math.floor(number): // floor - sàn nhà, làm tròn số thập phân xuống, ex: 9.8 -> 9
+  -> Math.round(number): trả về giá trị một số được làm tròn đến số nguyên gần nhất
+  -> Math.max(x1, x2, ..): Nhận 2 tham số trở lên 
+  -> Math.min(x1, x2, ..): Nhận 2 tham số trở lên
+  -> Math.random(): trả về số ngẫu nhiên từ 0 - 1

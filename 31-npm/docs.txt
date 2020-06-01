@@ -1,0 +1,21 @@
+- Node Package Manager
+
+  + Like xây nhà :)) gạch, ngói, cửa,..
+  + Đi mua của những thằng bán mấy cái này chứ không tự làm ra :v
+
+  + npm init
+  + npm install <moduleName> --save
+
+
+- MarkDown:
+  + MarkDown là ngôn ngữ đánh dấu văn bản
+  + Văn bản được viết bằng MarkDown sẽ được convert sang HTML và ngược lại
+  + Đưa ra cú pháp để giúp đánh dấu văn bản một cách dễ hiểu và ngắn gọn hơn
+   -> heading <=> #(1), ##(2), ..
+   -> strong  <=> **(text)**
+   -> italic  <=> *(text)*
+   -> li(ul)  <=> -, +, ***** 
+   -> li(ol)  <=> sử dụng các số
+   -> Image   <=> [] <-> alt, () <-> src
+   -> a       <=> [] <-> title, () <-> href
+   

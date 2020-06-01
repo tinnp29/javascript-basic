@@ -1,0 +1,10 @@
+- array.sort(); - trả về một mảng đã được sắp xếp
+
+- Syntax: array.sort(function(a, b) {
+            //code..
+          });
+  + a và b là 2 phần tử bất kỳ trong mảng, đều có thể giả sử so sánh được
+- nếu soft function:
+  + trả về giá trị < 0 --> a sẽ đứng trước b
+  + trả về giá trị > 0 --> a sẽ đứng sau b
+  + trả về 0 --> a và b sẽ giữ nguyên vị trí

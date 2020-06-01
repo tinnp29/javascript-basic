@@ -1,0 +1,29 @@
+Promise
+
+  - Trong JS có obj Promise(constructor function)
+  - Là một obj đặc biệt dùng cho các xử lý bất đồng bộ. Nó đại diện cho một xử lý
+    bất đồng bộ và chứa kết quả cũng như các lỗi xảy ra từ xử lý bất đòng bộ đó
+
+  - Syntax: 
+    + new Promise(executor);
+    + new Promise(function(resolve, reject) { ... } );
+    + Một hàm có 2 tham số đầu vào là 2 hàm phản hồi resolve và reject. 
+      Hàm resolve sẽ được gọi khi xử lý thành công, hàm reject được gọi khi xử lý thất bại
+    * note: 2 hàm phản hồi này rất dễ nhầm lẫn với phong cách phản hồi cảu Node.js.
+      Với Node.js thì hàm phản hồi lỗi thường là tham số đầu tiên, còn Promise thì ngược lại
+
+    + hàm executor sẽ được gọi ngay khi Promise được gọi tới, tức là nó còn chạy được trước
+      cả constructor function trả về kết quả của Promise
+
+    + Ta có thể lập trình bất đồng bộ gần giống với lập trình đồng bộ - tức là đợi xử lý
+      bất đồng bộ xong mới thực thi các thao tác mà cần sử dụng tới kết quả của xử lý đó.
+    + Promise sẽ trả ra một promise khác. Bằng promise mới này, ta lại có thể lặp lại 
+      việc sử dụng của kết quả của thao tác xử lý trước để làm đầu vào cho các thao tác
+      xử lý lúc sau
+    + Tại mỗi thời điểm, Promise có 3 trạng thái:
+      .- pending: trạng thái ban đầu khi khởi tạo Promise, nó thể hiện rằng, thao tác xử lý
+                  của ta chưa kết thúc
+      .- fullfilled: trạng thái xử lý thành công
+      .- rejected: trạng thái xử lý thất bại
+    + Chính các hàm then và catch này lại trả về một Promise nên ta có thể  xử lý một loạt các
+      thao tác phía sau một cách chuyển tiếp

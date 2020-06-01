@@ -1,0 +1,3 @@
+- Đây là các module đã được build sẵn trong máy
+- Muốn sử dụng phải require nó
+- Muốn biết những module nào đươc build sẵn vào node.org/docs.

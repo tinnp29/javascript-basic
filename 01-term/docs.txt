@@ -1,0 +1,9 @@
+Khái niệm về một phần gì đó trong cuộc sống.
+
+-> Các thuật ngữ trong lập trình:
+  .- Biến (Variables)
+  .- Mảng (Arrays)
+  .- Kiểu dữ liệu (Data type)
+  .- Hàm (Functions)
+  .- ...
+  

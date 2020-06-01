@@ -1,0 +1,70 @@
+1. Javascript
+2. HTML
+3. Git
+4. UI Design
+5. CSS
+6. Bootstrap
+7. NodeJS + Express
+8. SPA (React, Angular, Vue)
+
+
+Overview:
+  - FrontEnd & BackEnd
+  - Git
+  - UI Design
+  - Apache
+  - Nginx
+  - Wordpress
+  - Docker
+  - AWS
+  - Heroku
+  - Deployment
+
+Why ?
+  - Cộng đồng lớn
+  - Study less, do more (Web, Mobile Apps, Game, Server)
+
+
+1. Lộ trình học
+  - Vanilla Javascript
+  - Học từ những blog của developer nhiều kinh nghiệm 
+
+2. 33 Concepts
+  -> 1. Call Stack
+        .- Call Stack là một cấu trúc dữ liệu dạng ngăn xếp(stack) dùng để chứa thông tin về hoạt
+            động của chương trình máy tính trong lúc thực thi
+        .- JS là một ngôn ngữ đơn luồng, cũng có nghĩa là nó chỉ có một Call Stack và một lúc chỉ
+            làm một việc thôi. 
+  -> 2. Primitive Types
+          
+  -> 3. Value Types & Reference Types
+  -> 4. Implicit, Explicit, Nominal, Structuring and Duck Typing
+  -> 5. == vs === vs typeof
+  -> 6. Function Scope, Block Scope and Lexical Scope
+  -> 7. Expression vs Statement
+  -> 8. IIFE, Modules, NameSpaces
+  -> 9. Message Queue and Event Loop
+  -> 10. setTimeout, setInterval and requestAnimationFrame
+  -> 11. Javascript Engines
+  -> 12. Bitwise Operators, Type Arrays and Array Buffers
+  -> 13. DOM and Layout Trees
+  -> 14. Factories and Classes
+  -> 15. this, call, apply and bind
+  -> 16. new, Constructor, instanceof and Instances
+  -> 17. Prototype Inheritance and Prototype Chain
+  -> 18. Object.create and Object.asign
+  -> 19. map, reduce, filter
+  -> 20. Pure Functions, Side Effects and State Mutation
+  -> 21. Closures
+  -> 22. High Order Functions
+  -> 23. Recursion
+  -> 24. Collections and Generators
+  -> 25. Promises
+  -> 26. async/await
+  -> 27. Data Structure
+  -> 28. Expensive Operation and Big O Notation
+  -> 29. Algorithms
+  -> 30. Inheritance, Polymorphism and Code Reuse
+  -> 31. Design Patterns
+  -> 32. Partial Applications, Currying, Compose and Pipe
+  -> 33. Clean Code

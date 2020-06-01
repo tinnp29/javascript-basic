@@ -1,0 +1,15 @@
+Syntax:
+
+  for(init; condition; final-expression) {
+    statements;
+  }
+
+  Key words: for
+
+  - 1. init
+  - 2. condition
+  - 3. statements
+  - 4. final-expression
+  - if 2 is false ==> exit
+
+

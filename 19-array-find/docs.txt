@@ -1,0 +1,6 @@
+- Tìm kiếm
+
+- So sánh filter() và find():
+  + filter(): trả về một mảng các phần tử thỏa mãn điều kiện
+  + find(): cũng so sánh qua từng phần tử trong mảng, nhưng khi thỏa mãn điều kiện,
+            nó sẽ dừng thực thi và trả về kết quả luôn, trả về một phần tử

@@ -1,0 +1,11 @@
+* Syntax
+  
+  - For of:
+    + for (var obj of arr) {
+      // code..
+    }
+
+  - For in:
+    + for (var key in obj) {
+      // code..
+    }

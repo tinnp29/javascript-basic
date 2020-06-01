@@ -1,0 +1,5 @@
+
+JSON Object in Javascript
+
+  1. JSON.stringify() - convert an obj to a JSON string;
+  2. JSON.parse() - convert a JSON string to an obj;
